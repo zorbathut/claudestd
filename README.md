@@ -8,4 +8,14 @@ Things of note:
 * My normal method for adding code policy is to recognize an issue I keep running into, tell Claude to fix it, tell Claude to find more examples of it in the codebase and propose fixes, point out some issues in those choices, eventually settle on a set that we both agree should be changed, ask Claude to write up the general long-term policy that we arrived on, and then edit that as well. As a result, most of this was written *by Claude*. It is . . . very Claudey. I've been kinda afraid of tinkering with it.
 * Yes, it's probably bigger than it should be, both because of "stuff that could be stripped out" and "very Claudey".
 
+On new projects I tend to start with something like:
+
+```
+This is a new project! We're going to build a library for weebling wozzles using C#.
+
+First, look at ../claudestd, copy appropriate stuff in here, read it, consider it part of your overall instructions, and check it in.
+
+Second, [a description of the wozzle-weeble utility I plan to build]. Do an overall architectural design for an initial functional prototype. We'll be checking that into docs/ for now. Be thorough!
+```
+
 Whole thing is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) if you're into that. If you want to use this but for some reason don't like CC0, let me know and I'll multilicense it under something else.
